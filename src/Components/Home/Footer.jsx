@@ -1,7 +1,9 @@
 const Footer = () => {
     return (
 <div>
-    <h1>Hi!!</h1>
+            <p className="read-the-docs">
+                Click on the <strong>Vite</strong> and <strong>React</strong> logos to learn more
+            </p>
 </div>
     );
 };
