@@ -1,21 +1,28 @@
+import OpenLink from "../Components/Core/OpenLink.jsx";
+import Body from '../Components/Home/Body.jsx';
+import Footer from '../Components/Home/Footer.jsx';
 
-import './App.css'
-import Body from './Components/Home/Body'
-import Footer from './Components/Home/Footer'
-import Logo from './Components/Home/Logo'
-
-
-const Home = () =>{
- 
-
+import viteLogo from "../assets/vite.svg";
+import reactLogo from "../assets/react.svg";
+import githubLogo from "../assets/github.svg";
+const Home = () => {
   return (
-    <div>
- 
-    <Logo></ Logo>
-    <Body></ Body>
-    <Footer></ Footer>
-    </div>
-  )
+      <div>
+          <OpenLink
+              redirectURL="https://vite.dev"
+              logoImage={viteLogo}
+          />
+<OpenLink
+              redirectURL="https://react.dev"
+              logoImage={reactLogo}
+          />
+          <OpenLink
+              redirectURL="https://github.com/dheeyi/desarrollo-frontend-react-2025"
+              logoImage={githubLogo}
+          />
+          <Body />
+          <Footer />
+      </div>
+  );
 };
-
-export default Home
+export default Home;
