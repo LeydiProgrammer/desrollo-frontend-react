@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { decrement, increment,incrementByAmount } from '../../store/features/counter/counterSlice.js'
+
 const Counter=() =>{
   const count = useSelector((state) => state.counter.value)
   const isLogged = useSelector((state) => state.counter.isLogged)
