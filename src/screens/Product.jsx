@@ -1,11 +1,18 @@
 
+import FilterableProductTable from '../Components/Product/FilterableProductTable'
+
+
+
+import {useSelector} from 'react-redux'
 
 const Product = () => {
+ 
+  const dataProduct = useSelector((state) => state.product.dataProduct);
   return (
     <>
-        <p>Componente Product</p>
-        </>
+        <FilterableProductTable products={dataProduct} />
+    </>
   )
-}
+};
 
-export default Product
+export default Product;
