@@ -11,8 +11,8 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <Provider store={store}>
       
-      <BrowserRouter>
-      <BrowserRouter basename="/desrollo-frontend-react/"/>
+      
+      <BrowserRouter basename="/desrollo-frontend-react/">
         <App />
       </BrowserRouter>
     </Provider>
