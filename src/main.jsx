@@ -12,6 +12,7 @@ createRoot(document.getElementById('root')).render(
     <Provider store={store}>
       
       <BrowserRouter>
+      <BrowserRouter basename="/desrollo-frontend-react/">
         <App />
       </BrowserRouter>
     </Provider>
