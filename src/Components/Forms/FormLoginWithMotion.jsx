@@ -114,7 +114,7 @@ const FormLoginWithMotion = ({ titleForm }) => {
         >
           <div>
           <label>
-            Module
+            Module: 
             <input type="text" name="module" value={formDataSlice.module} required disabled/>
           </label>
           </div>
@@ -165,7 +165,7 @@ const FormLoginWithMotion = ({ titleForm }) => {
           transition={{ duration: 0.5 }}
         >
           <label>
-            Password
+            Password: 
             <input
               type={showPassword ? 'text' : 'password'}
 
