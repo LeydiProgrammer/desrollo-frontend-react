@@ -2,8 +2,8 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { useSelector, useDispatch } from 'react-redux'
 import { deleteForm , setInputs_Disabled } from '../../store/features/form/formSlice';
-import ModalInfo from "../../Components/Modal/ModalInfo.jsx";
-
+//import ModalInfo from "../../Components/Modal/ModalInfo.jsx";
+import ModalInfo from "@/Components/Modal/Modalinfo";
 const Navigator = () => {
  
   const dispatch = useDispatch();
