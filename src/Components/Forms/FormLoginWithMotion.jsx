@@ -70,9 +70,6 @@ const FormLoginWithMotion = ({ titleForm }) => {
   const [showPassword, setShowPassword] = useState(false);
 
 
-
-
-
   const onCloseModalError = () => {
     setShowModalError(false);
   };
