@@ -13,8 +13,6 @@ const Navigator = () => {
   const [modalMessage, setModalMessage] = useState("");
 
 
-
-
   const handleLogout = () => {
     setModalMessage("¿Estás seguro de que quieres cerrar sesión?");
     setShowLogoutModal(true);
