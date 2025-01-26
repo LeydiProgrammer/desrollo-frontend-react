@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router";
 import { useSelector, useDispatch } from 'react-redux'
 import { deleteForm , setInputs_Disabled } from '../../store/features/form/formSlice';
-import ModalInfo from "../../Components/Modal/Modalinfo.jsx";
+import ModalInfo from "../../Components/Modal/ModalInfo.jsx";
 
 const Navigator = () => {
  
@@ -38,6 +38,7 @@ const Navigator = () => {
       <Link to="/" className="nav-link">LandingPage</Link>
       <Link to="/login" className="nav-link">Login</Link>
       <Link to="/counter" className="nav-link">Counter</Link>
+      
       <Link to="/think" className="nav-link">Think</Link>
       <Link to="/products" className="nav-link">Product</Link>
       <Link to="/about" className="nav-link">About</Link>
