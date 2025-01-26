@@ -6,10 +6,12 @@ import Counter from "../Counter/Counter"
 import Login from "../../screens/Login"
 import {Routes,Route} from "react-router"
 
+import LandingPage from "../../screens/LandingPage"
 const Router = () => {
   return (
     <>
        <Routes>
+            <Route index element={<LandingPage/>} />
             <Route index element={<Home />} />
             <Route path="login" element={<Login />} />
             <Route path="products" element={<Product />} />

@@ -1,27 +1,29 @@
 import { motion } from "motion/react"
-// eslint-disable-next-line react/prop-types
-const ModalInfo = ({ visible, message, onClose, children }) => {
+
+
+const ModalSuccess = ({ visible, message, onClose }) => {
     if (!visible) {
         return null;
     }
-    return (
+return (
         <div className="modal-overlay">
             <motion.div
-                className="notification-success"
+                className="notification-bienvenido"
                 initial={{opacity: 0, y: -20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{duration: 0.5}}
             >
                 <div>
-                <p>{message} {children && <span className="modal-actions">{children}</span>}</p>
+                    <p>{message}</p>
                 </div>
                 <button
-                    className="close-btn-success"
+                    className="close-btn-bienvenido"
                     onClick={onClose}>
                     X
-                </button>
+</button>
             </motion.div>
         </div>
     );
 };
-export default ModalInfo;
+
+export default ModalSuccess;
