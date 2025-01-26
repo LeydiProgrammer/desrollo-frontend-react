@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { motion } from "motion/react";
 import useForm from "../Hooks/useForm.js";
 
-import ModalInfo from "../../Components/Modal/Modalinfo";
+import ModalInfo from "../../Components/Modal/ModalInfo";
 
 
 import ModalSuccess from "../../Components/Modal/ModalSuccess.jsx";
