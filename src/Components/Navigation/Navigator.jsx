@@ -14,7 +14,7 @@ const Navigator = () => {
 
 
   const handleLogout = () => {
-    setModalMessage("¿Estás seguro de que quieres cerrar sesión?");
+    setModalMessage("¿Estás seguro de que quieres cerrar sesion?");
     setShowLogoutModal(true);
   };
 
